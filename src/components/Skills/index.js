@@ -123,15 +123,17 @@ const Skills = () => {
   return (
     <Container id="skills">
       <Wrapper>
-        <Title>Skills</Title>
-        <Desc>Here are some of my skills on which I have been working on for the past 2 years.
+        <Title>Skill Set</Title>
+        <Desc>Here are some of my skills on which I have been worked 
         </Desc>
         <SkillsContainer>
           {skills.map((skill) => (
+            // eslint-disable-next-line react/jsx-key
             <Skill>
               <SkillTitle>{skill.title}</SkillTitle>
               <SkillList>
                 {skill.skills.map((item) => (
+                  // eslint-disable-next-line react/jsx-key
                   <SkillItem>
                     <SkillImage src={item.image}/>
                     {item.name}

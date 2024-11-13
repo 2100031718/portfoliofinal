@@ -83,11 +83,13 @@ const index = () => {
             <Wrapper>
                 <Title>Education</Title>
                 <Desc>
-                    My education has been a journey of self-discovery and growth. My educational details are as follows.
+                This is the timeline of academic knowledge I've gained over the past years.
+
                 </Desc>
                 <TimelineSection>
                     <Timeline>
                         {education.map((education,index) => (
+                            // eslint-disable-next-line react/jsx-key
                             <TimelineItem >
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
                                     <EducationCard education={education}/>

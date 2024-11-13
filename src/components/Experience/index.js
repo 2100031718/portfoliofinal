@@ -80,11 +80,12 @@ const index = () => {
             <Wrapper>
                 <Title>Experience</Title>
                 <Desc>
-                    My work experience as a software engineer and working on different companies and projects.
+                    My work experience as a software engineer, Web developer and working on different companies and projects.
                 </Desc>
                 <TimelineSection>
                     <Timeline>
                         {experiences.map((experience,index) => (
+                            // eslint-disable-next-line react/jsx-key
                             <TimelineItem>
                                 <TimelineSeparator>
                                     <TimelineDot variant="outlined" color="secondary" />
